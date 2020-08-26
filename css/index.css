@@ -3,9 +3,7 @@
 
 * {
     box-sizing: border-box;
-    border: red .25px solid;
 }
-
 html {
     font-size:  62.5%;
 }
@@ -13,11 +11,11 @@ html {
 body {
 background: #FBFFFB;
 line-height: 2;
+margin: 0;
 }
 
 header, h1, h2, h3, h4, h5, h6 {
     font-family: 'Oxygen', sans-serif;
-    /* color: #266035; */
     text-align: center;
 }
 
@@ -26,16 +24,17 @@ p {
     text-align: justify;
 }
 
+h1 { font-size: 4vw}
+h2 { font-size: 3vw; color: #266035}
+h3 { font-size: 2vw; color: #266235}
+h4 { font-size: 1vw}
 header {
     width:   100%;
-    height: 75rem;
+    height: 60rem;
     background-color: slategray;
     background-image: url(../images/header.jpg);
     alt: "Picture of some leaves.";
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    /* background-position: center; */
-    background-attachment: scroll;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +48,9 @@ nav {
     background: #FBFFFB;
     opacity: 90%;
     display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
-}
-
-.logo {
-    /* max-width: 50%; */
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
 }
 
 .logo img{
@@ -62,145 +58,149 @@ nav {
 }
 
 .navbar {
-    /* max-width: 50%; */
+    width: 50%;
     display:flex;
     justify-content: space-evenly;
 }
 
-/* nav a {
-    width: 20%;
-    text-align: center;
+nav a {
     color: #266035;
     text-decoration: none;
-} */
-
-/* .title-section {
-    background-color: slategray;
-    background-image: url(../images/header.jpg);
-    alt: "Picture of some leaves.";
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-
-.whiteBkgr {
-    max-width: 30%;
-    background-color: #FBFFFB;
-    display: flex;
-    margin: 1rem;
-    line-height:.5;
-    font-size: 1.4rem;
-    color: #266035
 }
 
-.title-section h1 {
-    max-width: 50%;
-    font-size: 3.6vw;
-    text-align: stretch;
-    background: none;
+.title{
+   width: 75%;
     color: #FBFFFB
 }
 
-.title-section p {
-    font-size: 1.8vw;
-    padding: 0 1rem;
-    max-width: 100%;
-} */
+.shop-button {
+    width: 30%;
+    height: 5rem;
+    background-color: #FBFFFB;
+    color: #266035
+}
 
-
-
-
+.shop-button:hover {
+    background-color: #266035;
+    color: #FBFFFB;
+}
 
 .story-section {
-    padding: 20rem 5rem;
+    width: 100%;
+    height: 70rem;
     background-color: slategray;
     background-image: url(../images/about-img.jpg);
     alt: "Picture of a trimming in a glass.";
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    background-attachment: scroll;
     display:flex;
     flex-direction: row-reverse;
-
+    align-items: center;
+    padding: 2rem;
 }
 
 #story-wrapper {
     width: 30%;
-    margin-top: 10rem;
+    margin: 2rem;
+    padding: 1rem;
 }
 
-.plant-section {
-    /* display: flex; */
-    /* width: 100%; */
-    /* flex-direction: column; */
-    background: blue;
-}
-
-.plant-category{
-    background: yellow;
+.plant-area {
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .plant-image-container {
-
-    background: purple;
+    width: 50%;
+    height: 50rem;
 }
 
-.plant-category img {
-    max-width: 50%;
+.succulants-container {
+    background-color: slategray;
+    background-image: url(../images/succulants.jpg);
+    alt: "Picture of some succulants.";
+    background-size: cover;
+    background-position: center;
+}
+
+.cacti-container {
+    background-color: slategray;
+    background-image: url(../images/cacti.jpg);
+    alt: "Picture of some cacti.";
+    background-size: cover;
+    background-position: center;
+}
+
+.tropicals-container {
+    background-color: slategray;
+    background-image: url(../images/tropicals.jpg);
+    alt: "Picture of some tropical plants.";
+    background-size: cover;
+    background-position: center;
 }
 
 .words-wrapper {
-    background: lightcoral;
     display: flex;
     flex-direction: column;
     max-width: 40%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 2rem;
-    padding: 2rem;
-}
-
-.succulents-area {
-    /* flex-direction: row-reverse; */
+    margin: auto;
+    padding: 4rem;
 }
 
 .cacti-area {
-    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
 }
 
-.tropicals-area {
-    /* flex-direction: row-reverse; */
+.plants-button:hover {
+   background-color: #FBFFFB;
+   color: #266035
 }
 
-
-
-
-
-
+.plants-button {
+    background-color: #266035;
+    color: #FBFFFB;
+}
 
 .contact-section h2, .contact-section h3 {
     color: #FBFFFB;
 }
 
-.contact-section h3 {
+.contact-section {
+    display: flex;
+    padding: 5rem;
+    background: #266035;
+    color: #FBFFFB;
+    flex-direction: column;
+}
+
+.contact-wrapper {
+    display: flex;
+    text-align: right;
+    /* align-items: center; */
+}
+
+ .shop-image-container img{
+    width: 30%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
     text-align: left;
 }
-.contact-section {
-    display: flex:
-    padding: 10rem;
+
+.contact-info h4 {
+    text-align: left;
+}
+footer {
     background: #266035;
-    color: #FBFFFB
+    color: #FBFFFB;
+    text-align: right;
 }

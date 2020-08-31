@@ -1,0 +1,344 @@
+@import url ('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url ('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:  62.5%;
+}
+
+body {
+background: #FBFFFB;
+line-height: 2;
+margin: 0;
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+h1 { font-size: 4vw}
+h2 { font-size: 3vw; color: #266035}
+h3 { font-size: 2vw; color: #266235}
+h4 { font-size: 1vw}
+
+header {
+    width:   100%;
+    height: 60rem;
+    background-color: slategray;
+    background-image: url(../images/header.jpg);
+    alt: "Picture of some leaves.";
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FBFFFB;
+    opacity: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.navbar {
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #266035;
+    text-decoration: none;
+}
+
+.title{
+   width: 75%;
+    color: #FBFFFB
+}
+
+.shop-button {
+    width: 30%;
+    height: 5rem;
+    background-color: #FBFFFB;
+    color: #266035
+}
+
+.shop-button:hover {
+    background-color: #266035;
+    color: #FBFFFB;
+}
+
+.story-section {
+    width: 100%;
+    height: 70rem;
+    background-color: slategray;
+    background-image: url(../images/about-img.jpg);
+    alt: "Picture of a trimming in a glass.";
+    background-size: cover;
+    background-position-x: -15rem;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+#story-wrapper {
+    width: 40%;
+    margin-top: 20rem;
+    padding: 5rem;
+}
+
+.plant-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plant-image-container {
+    width: 50%;
+    height: 50rem;
+}
+
+.succulants-container {
+    background-color: slategray;
+    background-image: url(../images/succulants.jpg);
+    alt: "Picture of some succulants.";
+    background-size: cover;
+    background-position: center;
+}
+
+.cacti-container {
+    background-color: slategray;
+    background-image: url(../images/cacti.jpg);
+    alt: "Picture of some cacti.";
+    background-size: cover;
+    background-position: center;
+}
+
+.tropicals-container {
+    background-color: slategray;
+    background-image: url(../images/tropicals.jpg);
+    alt: "Picture of some tropical plants.";
+    background-size: cover;
+    background-position: center;
+}
+
+.words-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 4rem;
+}
+
+.cacti-area {
+    flex-direction: row-reverse;
+}
+
+.plants-button:hover {
+   background-color: #FBFFFB;
+   color: #266035
+}
+
+.plants-button {
+    line-height: 2;
+    background-color: #266035;
+    color: #FBFFFB;
+}
+
+.contact-section h2, .contact-section h3 {
+    color: #FBFFFB;
+}
+
+.contact-section {
+    display: flex;
+    padding: 5rem;
+    background: #266035;
+    color: #FBFFFB;
+    line-height: 1.5;
+    flex-direction: column;
+}
+
+.contact-wrapper {
+    display: flex;
+    text-align: right;
+}
+
+ .shop-image-container img{
+    width: 40%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+}
+
+.contact-info h4 {
+    text-align: left;
+}
+
+footer {
+    background: #266035;
+    color: #FBFFFB;
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        height: 45rem;
+    }
+
+    .shop-button {
+        width: 50%;
+    }
+
+    .story-section {
+        height: 50rem;
+        background-position-x: -10rem;
+        background-position-y: -5rem;
+        padding: 1rem;
+    }
+
+    #story-wrapper {
+        width: 65%;
+        padding: 2rem;
+    }
+
+    .words-wrapper {
+        padding: 1rem;
+    }
+
+    .shop-image-container img{
+        width: 60%;
+    }
+
+    h4 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        height: 35rem;
+    }
+
+    .title {
+        width: 50%;
+    }
+
+    .shop-button {
+        display: none;
+    }
+
+    .story-section {
+        height: 35rem;
+        background-color: #e1e2e4;
+        background-image: none;
+        align-items: center;
+    }
+
+    #story-wrapper {
+        padding: 2rem;
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    .words-wrapper {
+        padding: 1rem 1rem 1rem 1rem;
+        max-width: 100%;
+    }
+
+    .plant-area {
+        flex-direction: column;
+    }
+
+    .plant-image-container {
+        width: 100%;
+    }
+
+    .shop-image-container img {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 2rem;
+    }
+
+    .contact-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-info p{
+        text-align: center;
+    }
+
+    .contact-info h4{
+        text-align: center;
+    }
+
+    footer {
+        display:flex;
+        justify-content: center;
+    }
+
+    .footer-text {
+        width: 50%;
+        text-align: center;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .plants-button {
+        width: 40%;
+    }
+}
